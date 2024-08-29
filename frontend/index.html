@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/Capture.PNG" alt="AQAI"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#motive">ABOUT</a></li>
+                    <li><a href="#blogs">BLOGS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Predicting the Impact of Pollution</h1>
+            <p>A team of deep tech entrepreneurs using machine learning to predict hyper-local air pollution levels.</p>
+            <a href="#contact" class="hero-btn">GET IN TOUCH</a>
+        </div>
+    </section>
+
+    <section class="motive" id="motive">
+        <h1>Our Motive</h1>
+        <p>Our hierarchical machine-learning model works by integrating sensor and satellite information to get a context-aware picture of pollution over your facilities.</p>
+        
+        <div class="row">
+            <div class="motive-col">
+                <h3>Sensor Intelligence</h3>
+                <p>A custom-tuned model for one system may not be applicable to another. Therefore, a general intelligence framework is needed to understand the network's interactions.</p>
+            </div>
+            <div class="motive-col">
+                <h3>Pollution Prediction</h3>
+                <p>How we operate equipment and the environment interact with each other in complex, nonlinear ways. Traditional engineering and human intuition often do not capture these interactions.</p>
+            </div>
+            <div class="motive-col">
+                <h3>Context-Aware AI</h3>
+                <p>Systems cannot adapt quickly to internal or external changes, such as the weather. This is because we cannot come up with rules and heuristics for every operating scenario.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges" id="challenges">
+        <h1>Air Pollution Costs Businesses $8.1 Trillion Annually</h1>
+        <p>Key Challenges</p>
+        <div class="row">
+            <div class="challenges-col">
+                <img src="images/health.avif" alt="Health">
+                <div class="layer">
+                    <h3>Health</h3>
+                </div>
+            </div>
+            <div class="challenges-col">
+                <img src="images/op.reas.avif" alt="Operational Research">
+                <div class="layer">
+                    <h3>Operational Research</h3>
+                </div>
+            </div>
+            <div class="challenges-col">
+                <img src="images/agriculture.avif" alt="Agriculture">
+                <div class="layer">
+                    <h3>Agriculture</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="milestones" id="milestones">
+        <h1>Milestones Reached</h1>
+        <p>Have a look at the milestones we have achieved.</p>
+        
+        <div class="row">
+            <div class="milestones-col">
+                <img src="images/partner.jfif" alt="Partnerships">
+                <h3>3 Regional Partnerships</h3>
+            </div>
+            <div class="milestones-col">
+                <img src="images/project.jfif" alt="Projects">
+                <h3>10 Projects</h3>
+            </div>
+            <div class="milestones-col">
+                <img src="images/energy.jfif" alt="Energy Efficiency">
+                <h3>40% Energy Efficiency Savings</h3>
+            </div>
+            <div class="milestones-col">
+                <img src="images/children.jfif" alt="Children Exposure">
+                <h3>750 Million Children Exposure Mapped</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h1>Media Coverage</h1>
+        <div class="blogs-container">
+            <div class="blogs-col">
+                <a href="https://www.aljazeera.com/amp/features/2023/4/19/refugees-claim-gas-flaring-cancer-link-northern-iraq">
+                    <img src="images/Fj969b5XoAEj7uF.jpeg" alt="Al Jazeera Article">
+                </a>
+                <p>April 2023</p>
+            </div>
+            <div class="blogs-col">
+                <a href="https://climatepolicyradar.org/latest/hacking-ai-for-climate-policy">
+                    <img src="images/openai.png" alt="Climate Policy Radar Article">
+                </a>
+                <p>November 2022</p>
+            </div>
+            <div class="blogs-col">
+                <a href="https://dusp.mit.edu/news/christina-last-named-agu-grand-prize-winner-data-visualization">
+                    <img src="images/hackathon.png" alt="MIT Article">
+                </a>
+                <p>December 2022</p>
+            </div>
+            <div class="blogs-col">
+                <a href="https://www.unicefventurefund.org/portfolio/aqai-formative-resilience">
+                    <img src="images/unicef.jpeg" alt="UNICEF Article">
+                </a>
+                <p>September 2022</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+<footer style="background-color: #f8f9fa; padding: 20px; text-align: center; font-family: Poppins, sans-serif; color: #333;">
+    <p style="margin: 0; font-size: 16px;">
+        We predict hyper-local levels of air pollution, empowering climate intelligence for business operations.
+    </p>
+</footer>
+</html>
